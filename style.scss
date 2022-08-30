@@ -1,0 +1,411 @@
+@import 'variables';
+@import 'menumobile';
+
+// style bouton
+.but{
+    background-color: $prim;
+    border-radius: 4px;
+    border-style: none;
+    width: 55%;
+    height:50px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+// fin style bouton
+
+body{
+    margin: 0px;
+    header{
+        @media only screen and (max-width: 992px){
+            display: none;
+        } 
+
+        nav{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                width: 10%;
+                color:$prim;
+            }
+            ul{
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+                padding-left: 0;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        font-family: 'Lato';
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #292929;
+                    }
+                }
+            }
+        }
+    }
+    
+    #hero{
+        height: 700px;
+        background-image: url(./images/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        #heroinfos{
+            width: 80%;
+            margin: auto;
+            #allinfos{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                } 
+
+                @media only screen and (min-width: 992px){
+                    width: 50%;
+                } 
+                h2{
+                    font-family: 'Noto Serif', serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 65px;
+                    line-height: 74px;
+                    color:$prim;
+                    margin-bottom: 0px;
+                    
+                    
+                }
+                p{
+                    
+                    font-family: lato;
+                    color: black;
+                    font-size: 20px;
+                    margin-top:40px ;
+                    margin-bottom:40px ;
+                }
+                
+                
+            }
+        }
+    }
+    
+    // debut style howitworks
+    #howit{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        #howitcont{
+            width: 80%;
+            margin: auto;
+            h3{
+                font-family: lato;
+                font-size: 20px;
+                color:black;
+            }
+            #howitinfos{
+                display: flex;
+                margin-bottom: 5%;
+                @media only screen and (max-width: 768px){
+                    flex-direction: column;
+                    margin-bottom: 15%;
+                } 
+                h4{
+                    margin: 0px;
+                    font-family: 'Noto Serif', serif;
+                    width: 60%;
+                    font-size: 50px;
+                    color: $prim;
+                    @media only screen and (max-width: 768px){
+                        width: 100%;
+                    } 
+                }
+                p{
+                    width: 40%;
+                    font-family: lato;
+                    font-size: 20px;
+                    color:black;
+                    @media only screen and (max-width: 768px){
+                        width: 100%;
+                        text-align: justify;
+                    }   
+                }
+            }
+            
+            #cards{
+                display: flex;
+                justify-content: space-around;
+                @media only screen and (max-width: 768px){
+                    flex-direction: column;
+                } 
+                .card{
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: inherit;
+                    align-items: center;
+                    @media only screen and (max-width: 768px){
+                        width: 100%;
+                       margin-bottom: 20%;
+            
+                    } 
+                    #cardone, #cardtwo, #cardthree{
+                        position: relative;
+                        span{
+                            position: absolute; 
+                            font-family: 'Noto Serif', serif;
+                            color:#CCEBE2;
+                            font-size: 150px;
+                            top: -100px;
+                            left: -25px;
+                            z-index: -1;  
+                        }
+                        h5{
+                            text-align: left;
+                            font-size: 20px;
+                            font-family: 'Noto Serif', serif;
+                            width: 100%;
+                            z-index: 0;
+                        }
+                        
+                    }
+                    
+                    p{
+                        font-family: lato;
+                        font-size: 20px;
+                        text-align: justify;
+                        min-height: 144px;
+                        @media only screen and (max-width: 768px){
+                            text-align: center;
+                        } 
+                    }
+                }
+                .cardimg{
+                    width: 100%;
+                    img{
+                        width:100%;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+    // fin style howitworks
+    
+    // debut style testimonial
+    #testimonial{
+        background-color: $darkprim;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        
+        #testicont{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media only screen and (max-width: 768px){
+                flex-direction: column;
+            } 
+            #testimonialleft{
+                width: 35%;
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                } 
+                h3{
+                    font-size: 24px;
+                    font-family: lato;
+                    color: white;
+                }
+                h5{
+                    font-size: 50px;
+                    color: white;
+                    font-family: 'Noto Serif', serif;
+                    
+                }
+                p{
+                    font-size: 24px;
+                    font-family: lato;
+                    color: white;
+                }
+                button{
+                    
+                }
+            }
+            #testimonialright{
+                width: 45%;
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                    padding-top: 5%;
+                } 
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // fin style testimonial
+    
+    // debut style ourproduct
+    #ourproduct{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        @media only screen and (max-width: 768px){
+            padding-bottom: 15%;
+        } 
+        #productcont{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            @media only screen and (max-width: 768px){
+                flex-direction: column-reverse
+            } 
+            #ourproductleft{
+                position: relative;
+                width: 35%;
+                height: 400px;
+                background-image: url(./images/ourproduct.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 5px;
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                    margin-top: 5%;
+                } 
+                
+                #smallcard{
+                    width: 60%;
+                    background-color: white;
+                    position: absolute;
+                    top:40%;
+                    left:-10%;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 5px 5px 5px gray;
+                    p:nth-child(1){
+                        font-family: lato;
+                        font-size: 20px;
+                        color: black;  
+                        text-align: center;
+                        text-decoration: underline;
+                    }
+                    #smallimg{
+                        border-radius: 60px;
+                        margin: auto;
+                        width: 60px;
+                        height: 60px;
+                        background-image: url(./images/ourproduct.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        p{
+                            font-family: lato;
+                            font-size: 10px;
+                            color: black;  
+                        }
+                    }
+                    p{
+                        font-family: 'Noto Serif', serif;
+                        color: black;  
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                    ul{
+                        li{
+                            font-family: lato;
+                            font-size: 10px;
+                            color: black; 
+                            @media only screen and (max-width: 768px){
+                                font-size: 15px;
+                            } 
+                        }
+                    }
+                }
+            }
+            #ourproductright{
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                   
+                } 
+                h3{
+                    font-family: lato;
+                    font-size: 20px;
+                    color: black;
+                }
+                h5{
+                    margin: 0px;
+                    font-family: 'Noto Serif', serif;
+                    font-size: 50px;
+                    color: #01996D;
+                }
+                p{
+                    font-family: lato;
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+        }
+    }
+    // fin style ourproduct
+    
+    
+    footer{
+        @media only screen and (max-width: 768px){
+            height: auto;
+        } 
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: #245852;
+        height: 50vh;
+        #rapidlinks{
+            width: 80%;
+            margin: auto;
+            h3{
+                font-size: 40px;
+                font-family: lato;
+                font-weight: 900;
+                color: white;
+            }
+            ul{
+                height: 30vh;
+                list-style: none;
+                padding-left: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-family: lato;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
